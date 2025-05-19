@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://4kwallpapers.com/images/wallpapers/eiffel-tower-night-time-glowing-lights-starry-sky-landmark-6016x3384-4253.jpg');
+    background-size: cover;
+    background-position: center 3em; /* Adjusts the image downward by 10% */
+    /* Alternatively, use pixels: background-position: center 50px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
