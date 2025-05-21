@@ -7,23 +7,19 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <!-- This example requires Tailwind CSS v2.0+ -->
-<header class="bg-indigo-600">
+
+    <!-- Navbari -->
+<header class="bg-blue-600 h-20">
   <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
-    <div class="w-full py-6 flex items-center justify-between border-b border-indigo-500 lg:border-none">
+    <div class="w-full flex items-center justify-between border-b border-indigo-500 lg:border-none">
       <div class="flex items-center">
         <a href="#">
-          <span class="sr-only">Workflow</span>
-          <img class="h-10 w-auto" src="https://tailwindui.com/img/logos/workflow-mark.svg?color=white" alt="">
+          <img class="h-22 w-55" src="1af93f_c6ca1b501aa249568509fd17926db9ce_mv2-removebg-preview.png" alt="">
         </a>
         <div class="hidden ml-10 space-x-8 lg:block">
-          <a href="#" class="text-base font-medium text-white hover:text-indigo-50"> Solutions </a>
+          <a href="#" class="text-lg font-medium text-white hover:text-indigo-50"> Countries </a>
 
-          <a href="#" class="text-base font-medium text-white hover:text-indigo-50"> Pricing </a>
-
-          <a href="#" class="text-base font-medium text-white hover:text-indigo-50"> Docs </a>
-
-          <a href="#" class="text-base font-medium text-white hover:text-indigo-50"> Company </a>
+          <a href="#" class="text-lg font-medium text-white hover:text-indigo-50"> About Us </a>
         </div>
       </div>
       <div class="ml-10 space-x-4">
@@ -31,21 +27,37 @@
         <a href="#" class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-indigo-50">Sign up</a>
       </div>
     </div>
-    <div class="py-4 flex flex-wrap justify-center space-x-6 lg:hidden">
-      <a href="#" class="text-base font-medium text-white hover:text-indigo-50"> Solutions </a>
-
-      <a href="#" class="text-base font-medium text-white hover:text-indigo-50"> Pricing </a>
-
-      <a href="#" class="text-base font-medium text-white hover:text-indigo-50"> Docs </a>
-
-      <a href="#" class="text-base font-medium text-white hover:text-indigo-50"> Company </a>
-    </div>
   </nav>
 </header>
 
-<div class="bg-indigo-600 bg-opacity-50 h-150 w-200 mt-30 ml-40 p-15 rounded-[100px]">
-    <h1 class="text-white text-6xl font-medium">Welcome to <b>Xplore!</b></h1>
-    <p class="text-white text-6xl mt-10">Which country would you like to explore?</p>
+<!--Pjesa kryesore -->
+<div class="flex">
+  <!--Pjesa E Majt -->
+  <div class="bg-blue-500/50 h-150 w-200 mt-30 ml-40 p-15 rounded-[100px] flex flex-col items-center justify-center">
+      <h1 class="text-white text-6xl font-medium">Welcome to <b>Xplore!</b></h1>
+      <p class="text-white text-6xl mt-10">Which country would you like to explore?</p>
+      <div class="bg-blue-600/80 h-20 w-95 rounded-[100px] mt-20 flex items-center justify-center" >
+        <a class="text-white text-3xl" href="">See all avalible countries!</a>
+      </div>
+      <div class="bg-blue-600/80 h-20 w-95 rounded-[100px] mt-4 flex items-center justify-center" >
+        <a class="text-white text-3xl" href="">Find out more about us!</a>
+      </div>
+  </div>
+
+  <!--Pjesa e Djatht -->
+  <div class="mt-30 ml-15 flex p-15">
+    <div>
+          <a href=""><img class="h-50 w-80 rounded-[40px] shadow-[15px_20px_15px_5px_rgba(0,_0,_0,_0.7)]" src="https://cdn.britannica.com/18/114418-050-DE218A16/Flag-Kosovo.jpg" alt=""></a>
+          <a href=""><img class="h-50 w-80 mt-20 rounded-[40px] shadow-[15px_20px_15px_5px_rgba(0,_0,_0,_0.7)]" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAPoAAACWCAMAAADABGUuAAAACVBMVEUAAADdAAD/zgDGIigcAAAAjUlEQVR4nO3PAREAMAgAIbV/6OXYPTRgBgAAAAAAAAAAAAAA4AubpV6kXqRepF6kXqRepF6kXqRepF6kXqRepF6kXqRepF6kXqRepF6kXqRepF6kXqReVK5flnqRepF6kXqRepF6kXqRepF6kXqRepF6kXqRepF6kXqRepF6kXqRepF6kXqRepF6Ubj+AEA8kn2JMPKKAAAAAElFTkSuQmCC" alt=""></a>
+    </div>
+   
+    <div class="ml-20">
+          <a href=""><img class="h-50 w-80 rounded-[40px] shadow-[15px_20px_15px_5px_rgba(0,_0,_0,_0.7)]" src="https://upload.wikimedia.org/wikipedia/commons/thumb/3/36/Flag_of_Albania.svg/640px-Flag_of_Albania.svg.png" alt=""></a>
+          <a href=""><img class="h-50 w-80 mt-20 rounded-[40px] shadow-[15px_20px_15px_5px_rgba(0,_0,_0,_0.7)]" src="data:image/png;base64,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" alt=""></a>
+    </div>
+
+
+  </div>
 
 </div>
 
