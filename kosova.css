@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('https://upload.wikimedia.org/wikipedia/commons/5/51/Prishtina_nga_Katedrala_1.jpg');
+    background-size: cover;
+    background-position: center em; /* Adjusts the image downward by 10% */
+    /* Alternatively, use pixels: background-position: center 50px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
