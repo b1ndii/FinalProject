@@ -1,0 +1,10 @@
+body {
+    margin: 0;
+    height: 100vh;
+    background-image: url('');
+    background-size: cover;
+    background-position: center 3em; /* Adjusts the image downward by 10% */
+    /* Alternatively, use pixels: background-position: center 50px; */
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}

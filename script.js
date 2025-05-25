@@ -1,6 +1,6 @@
 var prishtina = L.marker([42.65917322650542, 21.165693430509386])
   .bindPopup(`
-    <a style="text-decoration: none; color:black; display: block; text-align: center;" href="https://example.com/prishtina">
+    <a style="text-decoration: none; color:black; display: block; text-align: center;" href="prishtina.html">
       <b>
         See the landmarks<br>
         <span style="display: block;">of Prishtina</span>
