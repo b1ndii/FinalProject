@@ -94,8 +94,6 @@ var overlayMaps = {
     "Cities": cities
 };
 
-var layerControl = L.control.layers(baseMaps, overlayMaps).addTo(map);
-
 var baseMaps = {
     "OpenStreetMap": osm,
     "<span style='color: red'>OpenStreetMap.HOT</span>": osmHOT
