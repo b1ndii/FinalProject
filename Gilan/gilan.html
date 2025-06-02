@@ -1,0 +1,128 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>City of Gilan</title>
+    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+    <link rel="stylesheet" href="pristhina.css">
+</head>
+<body class="bg-blue-300">
+
+    <!-- Navbari -->
+<header class="bg-blue-600 h-20">
+  <nav class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8" aria-label="Top">
+    <div class="w-full flex items-center justify-between border-b border-indigo-500 lg:border-none">
+      <div class="flex items-center">
+        <a href="../main.html">
+          <img class="h-22 w-55" src="1af93f_c6ca1b501aa249568509fd17926db9ce_mv2-removebg-preview.png" alt="">
+        </a>
+        <div class="hidden ml-10 space-x-8 lg:block">
+          <a href="#" class="text-lg font-medium text-white hover:text-indigo-50"> Countries </a>
+
+          <a href="#" class="text-lg font-medium text-white hover:text-indigo-50"> About Us </a>
+        </div>
+      </div>
+      <div class="ml-10 space-x-4">
+        <a href="#" class="inline-block bg-indigo-500 py-2 px-4 border border-transparent rounded-md text-base font-medium text-white hover:bg-opacity-75">Sign in</a>
+        <a href="#" class="inline-block bg-white py-2 px-4 border border-transparent rounded-md text-base font-medium text-indigo-600 hover:bg-indigo-50">Sign up</a>
+      </div>
+    </div>
+  </nav>
+</header>
+
+
+<div class="container mx-auto py-8 mt-15">
+        <h1 id="slider-title" class="text-3xl font-bold text-center mb-8">Beach Sunset</h1>
+        
+        <div class="relative w-full max-w-4xl mx-auto overflow-hidden rounded-lg">
+            <!-- Slider Container -->
+            <div class="slider flex transition-transform duration-500 ease-in-out">
+                <div class="slide min-w-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Kalaja_e_Pogragj%C3%ABs_2.JPG/1100px-Kalaja_e_Pogragj%C3%ABs_2.JPG" alt="Beach Sunset" class="w-full h-130 object-cover">
+                </div>
+                <div class="slide min-w-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/b/b0/Gjilani_pas_dite.jpg" alt="Mountain Peak" class="w-full h-130 object-cover">
+                </div>
+                <div class="slide min-w-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/0/05/Kisha_e_Shen_Anes_%2C_Dunav.jpg" alt="Forest Path" class="w-full h-130 object-cover">
+                </div>
+                <div class="slide min-w-full">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Xhamia_e_Balecit.jpg" alt="City Skyline" class="w-full h-130 object-cover">
+                </div>
+                <div class="slide min-w-full">
+                    <img src="https://live.staticflickr.com/3725/9641426703_bbfe71d05a_b.jpg" alt="Desert Dunes" class="w-full h-130 object-cover">
+                </div>
+            </div>
+
+            <!-- Navigation Buttons -->
+            <button class="prev absolute top-1/2 left-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200" onclick="moveSlide(-1)">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+                </svg>
+            </button>
+            <button class="next absolute top-1/2 right-4 transform -translate-y-1/2 bg-white p-2 rounded-full shadow-md hover:bg-gray-200" onclick="moveSlide(1)">
+                <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+                </svg>
+            </button>
+
+            <!-- Dots Navigation -->
+            <div class="absolute bottom-4 left-1/2 transform -translate-x-1/2 flex space-x-2">
+                <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer" onclick="currentSlide(0)"></span>
+                <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer" onclick="currentSlide(1)"></span>
+                <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer" onclick="currentSlide(2)"></span>
+                <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer" onclick="currentSlide(3)"></span>
+                <span class="dot w-3 h-3 bg-gray-300 rounded-full cursor-pointer" onclick="currentSlide(4)"></span>
+            </div>
+        </div>
+
+        <!-- Anchor Link -->
+        <div class="text-center mt-4">
+            <a  id="slider-link" href="https://example.com/beach" class="text-gray-1000 hover:underline">Take me to the Beach</a>
+        </div>
+    </div>
+
+    <!-- Te links duhet me qit linkun per google maps per me shku atje (perfuni fotos teksti qe o) -->
+    <script>
+        const slideData = [
+            { title: 'Pogragja Fortress', link: 'pogragja.html', linkText: 'Go to the Pogragja Fortress!' },
+            { title: 'Gjilan City Hall', link: 'sheshi-gi.html', linkText: 'Take me to the  Gjilan City Hall!' },
+            { title: 'Saint Annes Church', link: 'kisha-gi.html', linkText: 'Take me to the Saint Annes Church!' },
+            { title: 'Balec Mosque', link: 'xhamia-gi.html', linkText: 'Take me to the Balec Mosque!' },
+            { title: 'Gjilan Ethnographic Park', link: 'parku-gi.html', linkText: 'Take me to the Gjilan Ethnographic Park!' }
+        ];
+
+        let currentIndex = 0;
+        const slides = document.querySelector('.slider');
+        const dots = document.querySelectorAll('.dot');
+        const titleElement = document.getElementById('slider-title');
+        const linkElement = document.getElementById('slider-link');
+
+        function updateSlider() {
+            slides.style.transform = `translateX(-${currentIndex * 100}%)`;
+            dots.forEach((dot, index) => {
+                dot.classList.toggle('bg-gray-800', index === currentIndex);
+                dot.classList.toggle('bg-gray-300', index !== currentIndex);
+            });
+            titleElement.textContent = slideData[currentIndex].title;
+            linkElement.href = slideData[currentIndex].link;
+            linkElement.textContent = slideData[currentIndex].linkText;
+        }
+
+        function moveSlide(step) {
+            currentIndex = (currentIndex + step + slides.children.length) % slides.children.length;
+            updateSlider();
+        }
+
+        function currentSlide(index) {
+            currentIndex = index;
+            updateSlider();
+        }
+
+        // Initialize slider
+        updateSlider(0);
+    </script>
+
+
+
+</body>
